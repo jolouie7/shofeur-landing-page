@@ -9,7 +9,7 @@ const Hero = () => {
             <h1 className="title-font sm:text-4xl text-3xl mb-8 font-medium text-white">
               Chauffeured Reservations Made Simple
             </h1>
-            <div className="flex sm:justify-center ">
+            <div className="flex justify-evenly sm:justify-center">
               <div className="relative mr-4 md:w-full lg:w-full xl:w-1/2 w-2/4">
                 <input
                   type="text"
