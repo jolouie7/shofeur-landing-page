@@ -1,11 +1,11 @@
 import Image from "next/image";
-interface dataListProps {
+interface DataListProps {
   name: string;
   image: string;
 }
 interface GalleryProps {
   children: string;
-  dataList: dataListProps[];
+  dataList: DataListProps[];
 }
 
 const Gallery = ({ children, dataList }: GalleryProps) => {
@@ -20,7 +20,7 @@ const Gallery = ({ children, dataList }: GalleryProps) => {
           </div>
 
           <div className="flex justify-center flex-wrap">
-            {dataList.map((data: dataListProps, idx: number) => (
+            {dataList.map((data: DataListProps, idx: number) => (
               <div className="p-4 lg:w-1/3 md:w-1/2 w-full" key={idx}>
                 <div className="h-full flex flex-col items-center text-center">
                   <Image
