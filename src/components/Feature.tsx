@@ -7,9 +7,9 @@ export default function Feature() {
     <div className="bg-gray-900 flex flex-col justify-center items-center py-8">
       <div className="flex justify-center items-center mx-4 my-8 md:m-16">
         <Image
-          src="/images/Airport Transfers.jpeg"
+          src="/images/Shofeur-youtube.png"
           alt="Shofeur Video"
-          className="rounded-lg md:w-1/2 w-full"
+          className="rounded-lg w-full"
           width={1000}
           height={800}
         />
