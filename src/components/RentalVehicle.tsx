@@ -1,12 +1,17 @@
 import Image from "next/image";
 import React from "react";
 
-interface rentalVehiclesProps {
-  dataList: any;
+interface DataListProps {
+  image: string;
+  name: string;
+  description: string;
+}
+interface RentalVehiclesProps {
+  dataList: DataListProps[];
   children: string;
 }
 
-const RentalVehicle = ({ dataList, children }: rentalVehiclesProps) => {
+const RentalVehicle = ({ dataList, children }: RentalVehiclesProps) => {
   console.log(dataList);
   return (
     <>
@@ -18,9 +23,9 @@ const RentalVehicle = ({ dataList, children }: rentalVehiclesProps) => {
             </h1>
           </div>
           <div className="flex flex-wrap justify-center">
-            {dataList.map((data: any, idx: number) => (
+            {dataList.map((data: DataListProps, idx: number) => (
               <div className="lg:w-1/3 md:w-1/2 p-4 w-full" key={idx}>
-                <a className="block relative h-60 rounded overflow-hidden">
+                <a className="flex justify-center relative h-52 rounded overflow-hidden">
                   <Image
                     alt={children}
                     className="rounded-lg max-w-[300px] max-h-[200px]"
