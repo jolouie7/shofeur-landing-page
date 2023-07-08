@@ -50,10 +50,10 @@ const Footer = () => {
               <a className="text-gray-400" href="#">
                 <FaInstagram />
               </a>
-              <a className="ml-3 text-gray-400">
+              <a className="ml-3 text-gray-400" href="#">
                 <FaFacebookF />
               </a>
-              <a className="ml-3 text-gray-400">
+              <a className="ml-3 text-gray-400" href="#">
                 <FaTwitter />
               </a>
               <a className="ml-3 text-gray-400" href="#">
