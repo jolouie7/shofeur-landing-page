@@ -1,8 +1,11 @@
 import Image from "next/image";
-
+interface dataListProps {
+  name: string;
+  image: string;
+}
 interface GalleryProps {
   children: string;
-  dataList: any;
+  dataList: dataListProps[];
 }
 
 const Gallery = ({ children, dataList }: GalleryProps) => {
@@ -17,7 +20,7 @@ const Gallery = ({ children, dataList }: GalleryProps) => {
           </div>
 
           <div className="flex justify-center flex-wrap">
-            {dataList.map((data: any, idx: any) => (
+            {dataList.map((data: dataListProps, idx: number) => (
               <div className="p-4 lg:w-1/3 md:w-1/2 w-full" key={idx}>
                 <div className="h-full flex flex-col items-center text-center">
                   <Image
@@ -28,7 +31,9 @@ const Gallery = ({ children, dataList }: GalleryProps) => {
                     height={200}
                   />
                   <div className="w-full">
-                    <h3 className="text-gray-500 mb-3">{data.name}</h3>
+                    <h3 className="text-gray-500 title-font text-lg font-medium my-4">
+                      {data.name}
+                    </h3>
                   </div>
                 </div>
               </div>
