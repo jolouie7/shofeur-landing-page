@@ -17,12 +17,12 @@ export const popularOccasions = [
     name: "Concerts and Festivals",
     image: "/images/Concerts and Festivals.jpeg",
   },
-  { name: "Weddings", image: "/images/Weddings.jpeg" },
+  { name: "Weddings", image: "/images/Wedding.jpeg" },
   { name: "Night Out/Party Bus", image: "/images/Night Out:Party Bus.jpeg" },
 ];
 
 export const iconicDestinations = [
-  { name: "Times Square", image: "/images/Times-Square.jpeg" },
+  { name: "Times Square", image: "/images/Times Square.jpeg" },
   {
     name: "Statue of Liberty and Ellis Island",
     image: "/images/Statue of Liberty and Ellis Island.jpeg",
